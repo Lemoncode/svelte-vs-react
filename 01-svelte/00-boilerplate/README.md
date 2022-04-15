@@ -70,6 +70,15 @@ _./tsconfig_
 }
 ```
 
+Prior to start coding svelte components, let's add prettier support
+for the files:
+
+```bash
+npm install prettier prettier-plugin-svelte --save-dev
+```
+
+````
+
 Now let's create some placeholder for the demos:
 
 _./src/00-hello-world/hello-world.svelte_
@@ -80,7 +89,7 @@ _./src/00-hello-world/hello-world.svelte_
 </script>
 
 <h1>Place holder hello world demo</h1>
-```
+````
 
 // Same thing for the rest of components
 
