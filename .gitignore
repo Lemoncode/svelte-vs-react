@@ -30,3 +30,11 @@ desktop.ini
 
 # MacOs
 .DS_Store
+
+
+# Svelte get started
+/**/*/public/build
+/**/*/.DS_Store
+/**/*/build.*
+public/assets/*
+public/build/*
