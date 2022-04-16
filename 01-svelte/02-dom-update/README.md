@@ -14,26 +14,75 @@ in to a fresh folder and execute
 npm install
 ```
 
-We are going to add two variables that will store a name and a lastname,
-then whenever there is an update we will store the resulting value in a
-third variable called full name (for the sake of the demo we won't use
-two way data binding)):
+We are going to create a simpe form:
 
-_./src/00-hello-world/hello-world.svelte_
+- Field name.
+- Field lastname.
+- Field address.
+
+We will add a calculated field called fullname: this is
+just to check how reactive code works (we could calculate
+this directly in the markup section).
+
+_./src/01-dom-update/dom-update.svelte_
 
 ```svelte
 <script lang="ts">
-  let name = "World";
+  let name = "";
+  let lastname = "";
+
+  // Just adding a new field to test that full name
+  // calc is not called when address is changed
+  let address = "";
+
+  console.log("Hey Rerender going on !!");
 </script>
 
-<h1>Hello {name} !</h1>
+<h1>Update name and lastname = name + lastname</h1>
+
+<div>
+  <input placeholder="name" bind:value={name} />
+  <input placeholder="lastname" bind:value={lastname} />
+  <input placeholder="address" bind:value={address} />
+
+  Fullname: {fullname}
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
 ```
 
-Let's run the build:
+Ok, now we want to store in fullname the name and lastname
+concatenation and we want to get it updated whenever any of theses
+values change, we can add some reactiveo code like this:
+
+```diff
+<script lang="ts">
+  let name = "";
+  let lastname = "";
+
+  // Just adding a new field to test that full name
+  // calc is not called when address is changed
+  let address = "";
+
++  $: {
++    console.log("**Reactive code in action...");
++    fullname = `${name} ${lastname} ${Math.random()}`;
++  }
+
+  console.log("Hey Rerender going on !!");
+</script>
+```
+
+And that's all:
 
 ```bash
-npm run build
+npm run dev
 ```
 
-We can check the minified size (not gzipped) of the whole project is 30Kb, we
-can check it against the react project.
+Now if we change the name and lastname, the fullname will be updated,
+but if we change the address, the fullname will not be updated.

@@ -5,9 +5,8 @@
   // to compare reactive code useEffect vs Svelte
   let fullname = "";
   $: {
-    // TODO: Check with Victor
-    //fullname = `${name} ${lastname}`;
-    fullname = name + " " + lastname;
+    console.log("**Reactive code in action...");
+    fullname = `${name} ${lastname} ${Math.random()}`;
   }
 
   // Just adding a new field to test that full name
