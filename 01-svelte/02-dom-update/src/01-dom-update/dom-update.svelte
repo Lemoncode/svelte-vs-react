@@ -1,13 +1,33 @@
 <script lang="ts">
   let name = "";
   let lastname = "";
+  // We could use two way binding here, but we just want
+  // to compare reactive code useEffect vs Svelte
+  let fullname = "";
+  $: {
+    fullname = `${name} ${lastname}`;
+  }
+
+  // Just adding a new field to test that full name
+  // calc is not called when address is changed
+  let address = "";
 
   console.log("Hey Rerender going on !!");
 </script>
 
 <h1>Update name and lastname = name + lastname</h1>
 
-<input bind:value={name} />
-<input bind:value={lastname} />
+<div>
+  <input placeholder="name" bind:value={name} />
+  <input placeholder="lastname" bind:value={lastname} />
+  <input placeholder="address" bind:value={address} />
 
-{name}&nbsp;{lastname}
+  Fullname: {fullname}
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

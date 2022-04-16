@@ -1,6 +1,9 @@
-# 01-Hello world
+# 02-Dom Update Reactive
 
 # Intro
+
+In this demo we are going to compare how the DOM gets updated using
+Svelte vs React rerender approach
 
 # Step by step guide:
 
@@ -11,7 +14,10 @@ in to a fresh folder and execute
 npm install
 ```
 
-We are going to add some very basic hello world code:
+We are going to add two variables that will store a name and a lastname,
+then whenever there is an update we will store the resulting value in a
+third variable called full name (for the sake of the demo we won't use
+two way data binding)):
 
 _./src/00-hello-world/hello-world.svelte_
 
@@ -31,5 +37,3 @@ npm run build
 
 We can check the minified size (not gzipped) of the whole project is 30Kb, we
 can check it against the react project.
-
-
