@@ -1,15 +1,15 @@
 <script lang="ts">
   import { Router, Route, Link } from "svelte-navigator";
-  import HelloWorld from "./00-hello-world/hello-world.svelte";
-  import DomUpdate from "./01-dom-update/dom-update.svelte";
-  import HandlingCSS from "./02-handling-css/handling-css.svelte";
-  import ReactiveCode from "./03-reactive-code/reactive-code.svelte";
-  import LifeCycle from "./04-life-cycle/life-cycle.svelte";
-  import AsyncCallback from "./05-async-callback/async-callback.svelte";
-  import ConditionalRendering from "./06-conditional-rendering/conditional-rendering.svelte";
-  import CommonData from "./07-common-data/common-data.svelte";
-  import DataLoad from "./08-data-load/data-load.svelte";
-  import WebComponent from "./09-web-components/web-component.svelte";
+  import { HelloWorld } from "./00-hello-world";
+  import { DomUpdate } from "./01-dom-update";
+  import { HandlingCSS } from "./02-handling-css";
+  import { ReactiveCode } from "./03-reactive-code";
+  import { LifeCycle } from "./04-life-cycle";
+  import { AsyncCallback } from "./05-async-callback";
+  import { ConditionalRendering } from "./06-conditional-rendering";
+  import { CommonData } from "./07-common-data";
+  import { DataLoad } from "./08-data-load";
+  import { WebComponent } from "./09-web-components";
 </script>
 
 <main>
@@ -33,7 +33,7 @@
 
     <div>
       <Route path="/hello-world">
-        <HelloWorld />
+        <HelloWorld name="World" />
       </Route>
       <Route path="/render">
         <DomUpdate />
