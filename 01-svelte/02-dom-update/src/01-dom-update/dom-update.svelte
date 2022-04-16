@@ -5,7 +5,9 @@
   // to compare reactive code useEffect vs Svelte
   let fullname = "";
   $: {
-    fullname = `${name} ${lastname}`;
+    // TODO: Check with Victor
+    //fullname = `${name} ${lastname}`;
+    fullname = name + " " + lastname;
   }
 
   // Just adding a new field to test that full name
