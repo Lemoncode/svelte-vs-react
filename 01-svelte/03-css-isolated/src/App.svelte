@@ -2,7 +2,7 @@
   import { Router, Route, Link } from "svelte-navigator";
   import HelloWorld from "./00-hello-world/hello-world.svelte";
   import DomUpdate from "./01-dom-update/dom-update.svelte";
-  import HandlingCSS from "./02-handling-css/handling-css.svelte";
+  import { HandlingCSS } from "./02-handling-css";
   import ReactiveCode from "./03-reactive-code/reactive-code.svelte";
   import LifeCycle from "./04-life-cycle/life-cycle.svelte";
   import AsyncCallback from "./05-async-callback/async-callback.svelte";
