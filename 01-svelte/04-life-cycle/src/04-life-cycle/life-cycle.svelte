@@ -6,11 +6,19 @@
   let search = "";
   let movies: Movie[] = [];
 
+
+  $: {
+    getMovies(search).then((result) => {
+      movies = result;
+    });
+  }
+
+  /*
   $: search &&
     getMovies(search).then((result) => {
       movies = result;
     });
-
+  */ 
   console.log(movies);
 </script>
 
