@@ -86,3 +86,7 @@ export { default as HandlingCSS } from "./handling-css.svelte";
 
 Let's un the sample and check that both components keep their own styles,
 even if we have naming conflicts.
+
+```bash
+npm run dev
+```
