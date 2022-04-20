@@ -1,9 +1,11 @@
-# 02-Dom Update Reactive
+# 03-Dom Update Reactive
 
 # Intro
 
-In this demo we are going to compare how the DOM gets updated using
-Svelte vs React rerender approach
+When we use Svelte we get component scoped styles by default
+(more info about how this works: https://geoffrich.net/posts/svelte-scoped-styles/)
+
+In this demo we are going to check how this work
 
 # Step by step guide:
 
@@ -14,75 +16,73 @@ in to a fresh folder and execute
 npm install
 ```
 
-We are going to create a simpe form:
+Let's create under \_./src/03-handling-css' the follwing files:
 
-- Field name.
-- Field lastname.
-- Field address.
+A component the will just set some styles for h1 and a given
+class name:
 
-We will add a calculated field called fullname: this is
-just to check how reactive code works (we could calculate
-this directly in the markup section).
-
-_./src/01-dom-update/dom-update.svelte_
+_./src/03-handling-css/component-a.svelte_
 
 ```svelte
 <script lang="ts">
-  let name = "";
-  let lastname = "";
-
-  // Just adding a new field to test that full name
-  // calc is not called when address is changed
-  let address = "";
-
-  console.log("Hey Rerender going on !!");
 </script>
 
-<h1>Update name and lastname = name + lastname</h1>
-
-<div>
-  <input placeholder="name" bind:value={name} />
-  <input placeholder="lastname" bind:value={lastname} />
-  <input placeholder="address" bind:value={address} />
-
-  Fullname: {fullname}
-</div>
+<h1 class="myh1">Component A - looking for a CSS conflict</h1>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
+  h1 {
+    background-color: lightblue;
+  }
+
+  .myh1 {
+    color: goldenrod;
   }
 </style>
 ```
 
-Ok, now we want to store in fullname the name and lastname
-concatenation and we want to get it updated whenever any of theses
-values change, we can add some reactiveo code like this:
+A second component that will set some styles for the h1 element
+and use the same class name (let's look for conflicts)
 
-```diff
+_./src/03-handling-css/component-b.svelte_
+
+```svelte
 <script lang="ts">
-  let name = "";
-  let lastname = "";
-
-  // Just adding a new field to test that full name
-  // calc is not called when address is changed
-  let address = "";
-
-+  $: {
-+    console.log("**Reactive code in action...");
-+    fullname = `${name} ${lastname} ${Math.random()}`;
-+  }
-
-  console.log("Hey Rerender going on !!");
 </script>
+
+<h1 class="myh1">Component B - looking for a CSS conflict</h1>
+
+<style>
+  h1 {
+    background-color: rebeccapurple;
+  }
+
+  .myh1 {
+    color: gray;
+  }
+</style>
 ```
 
-And that's all:
+Let's consume this in the main component:
 
-```bash
-npm run dev
+_./src/03-handling-css/handling-css.svelte_
+
+```svelte
+<script lang="ts">
+  import ComponentA from "./component-a.svelte";
+  import ComponentB from "./component-b.svelte";
+</script>
+
+<ComponentA />
+<ComponentB />
 ```
 
-Now if we change the name and lastname, the fullname will be updated,
-but if we change the address, the fullname will not be updated.
+Let's expose only the main componente through a barrel:
+
+_./src/03-handling-css/index.ts_
+
+```ts
+export { default as HandlingCSS } from "./handling-css.svelte";
+```
+
+Let's un the sample and check that both components keep their own styles,
+even if we have naming conflicts.
