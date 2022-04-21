@@ -6,23 +6,14 @@
   let search = "";
   let movies: Movie[] = [];
 
-
   $: {
     getMovies(search).then((result) => {
       movies = result;
     });
   }
-
-  /*
-  $: search &&
-    getMovies(search).then((result) => {
-      movies = result;
-    });
-  */ 
-  console.log(movies);
 </script>
 
-<h1>Place holder life cycle code demo</h1>
+<h1>Reactive code demo</h1>
 
 <ul>
   <input placeholder="move title" bind:value={search} />
