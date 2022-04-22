@@ -6,8 +6,8 @@
   let bitcoinCurrentValue = 0;
   let temperatureCurrentValue = 0;
 
-  // cannot use async clear function mount function is Async !!
-  // WTF !
+  // Clear function is not called if onMount function is async
+  // OPuch !
   // https://github.com/sveltejs/svelte/issues/4927
   // something like:
   //   onMount(async () => {
