@@ -7,7 +7,7 @@
   let temperatureCurrentValue = 0;
 
   // Clear function is not called if onMount function is async
-  // OPuch !
+  // Ouch !
   // https://github.com/sveltejs/svelte/issues/4927
   // something like:
   //   onMount(async () => {
