@@ -8,8 +8,9 @@
   import AsyncCallback from "./05-async-callback/async-callback.svelte";
   import ConditionalRendering from "./06-conditional-rendering/conditional-rendering.svelte";
   import CommonData from "./07-common-data/common-data.svelte";
-  import DataLoad from "./08-data-load/data-load.svelte";
-  import WebComponent from "./09-web-components/web-component.svelte";
+  import Context from "./08-context/context.svelte";
+  import DataLoad from "./09-data-load/data-load.svelte";
+  import WebComponent from "./10-web-components/web-component.svelte";
 </script>
 
 <main>
@@ -27,7 +28,8 @@
         ><div class="link">06 Conditional Rendering</div></Link
       >
       <Link to="/commondata"><div class="link">07 Common Data</div></Link>
-      <Link to="/dataload"><div class="link">08 Data Load</div></Link>
+      <Link to="/context"><div class="link">08 Context</div></Link>
+      <Link to="/dataload"><div class="link">09 Data Load</div></Link>
       <Link to="/webcomponent"><div class="link">09 Web Component</div></Link>
     </nav>
 
@@ -55,6 +57,9 @@
       </Route>
       <Route path="/commondata">
         <CommonData />
+      </Route>
+      <Route path="/context">
+        <Context />
       </Route>
       <Route path="/dataload">
         <DataLoad />
