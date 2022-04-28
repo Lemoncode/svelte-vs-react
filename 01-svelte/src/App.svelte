@@ -8,7 +8,7 @@
   import AsyncCallback from "./05-async-callback/async-callback.svelte";
   import ConditionalRendering from "./06-conditional-rendering/conditional-rendering.svelte";
   import CommonData from "./07-common-data/common-data.svelte";
-  import Context from "./08-context/context.svelte";
+  import Context from "./08-context/demo.svelte";
   import DataLoad from "./09-data-load/data-load.svelte";
   import WebComponent from "./10-web-components/web-component.svelte";
 </script>
