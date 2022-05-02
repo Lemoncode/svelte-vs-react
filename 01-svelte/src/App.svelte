@@ -35,7 +35,7 @@
 
     <div>
       <Route path="/hello-world">
-        <HelloWorld />
+        <HelloWorld name="world" />
       </Route>
       <Route path="/render">
         <DomUpdate />
