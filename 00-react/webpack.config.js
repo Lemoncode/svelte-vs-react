@@ -8,7 +8,12 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx"],
   },
   entry: {
-    app: ["./index.tsx", "./styles.css", "./navbar.styles.css"],
+    app: [
+      "regenerator-runtime/runtime",
+      "./index.tsx",
+      "./styles.css",
+      "./navbar.styles.css",
+    ],
   },
   devtool: "eval-source-map",
   stats: "errors-only",
