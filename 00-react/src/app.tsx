@@ -5,7 +5,7 @@ import { DomUpdate } from "./01-dom-upate";
 import { HandlingCSS } from "./02-handling-css";
 import { ReactiveCode } from "./03-reactive-code";
 import { LifeCycle } from "./04-life-cycle";
-import { AsyncCallback } from "./05-async-callback";
+import { AsyncCallback } from "./05-async-closure";
 import { ConditionalRendering } from "./06-conditional-rendering";
 import { CommonData } from "./07-common-data";
 import { DataLoad } from "./08-data-load";
