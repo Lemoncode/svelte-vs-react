@@ -28,7 +28,7 @@ export const NavBar = () => {
       <Link className="link" to="/07-common-data">
         07/08 Common Data + Context
       </Link>
-      <Link className="link" to="/09-data-load">
+      <Link className="link" to="/08-data-load">
         08 Data Load
       </Link>
     </nav>

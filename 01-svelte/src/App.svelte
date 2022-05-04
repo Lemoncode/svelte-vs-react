@@ -30,41 +30,41 @@
       <Link to="/commondata"><div class="link">07 Common Data</div></Link>
       <Link to="/context"><div class="link">08 Context</div></Link>
       <Link to="/dataload"><div class="link">09 Data Load</div></Link>
-      <Link to="/webcomponent"><div class="link">09 Web Component</div></Link>
+      <Link to="/webcomponent"><div class="link">10 Web Component</div></Link>
     </nav>
 
     <div>
-      <Route path="/hello-world">
+      <Route path="/hello-world" primary={false}>
         <HelloWorld name="world" />
       </Route>
-      <Route path="/render">
+      <Route path="/render" primary={false}>
         <DomUpdate />
       </Route>
-      <Route path="/handlingCss">
+      <Route path="/handlingCss" primary={false}>
         <HandlingCSS />
       </Route>
-      <Route path="/reactiveCode">
+      <Route path="/reactiveCode" primary={false}>
         <ReactiveCode />
       </Route>
-      <Route path="/lifeCycle">
+      <Route path="/lifeCycle" primary={false}>
         <LifeCycle />
       </Route>
-      <Route path="/asynccallback">
+      <Route path="/asynccallback" primary={false}>
         <AsyncCallback />
       </Route>
-      <Route path="/conditionalrendering">
+      <Route path="/conditionalrendering" primary={false}>
         <ConditionalRendering />
       </Route>
-      <Route path="/commondata">
+      <Route path="/commondata" primary={false}>
         <CommonData />
       </Route>
-      <Route path="/context">
+      <Route path="/context" primary={false}>
         <Context />
       </Route>
-      <Route path="/dataload">
+      <Route path="/dataload" primary={false}>
         <DataLoad />
       </Route>
-      <Route path="/webcomponent">
+      <Route path="/webcomponent" primary={false}>
         <WebComponent />
       </Route>
     </div>

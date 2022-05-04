@@ -1,6 +1,9 @@
 <script lang="ts">
   import { setContext } from "svelte";
-  import { userStore } from "./user.store";
+  import { createUserStore } from "./user.store";
+
+  // create the store 
+  const userStore = createUserStore();
 
   // setContext has a key / value
   // whatchout we should avoid using magic strings

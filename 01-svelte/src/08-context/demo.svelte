@@ -2,6 +2,7 @@
   import UserContext from "./user.context.svelte";
   import Login from "./login.svelte";
   import ShowUser from "./showuser.svelte";
+import Another from "./another.svelte";
 </script>
 
 <h1>Place holder context demo ***</h1>
@@ -10,3 +11,4 @@
   <Login />
   <ShowUser />
 </UserContext>
+<Another />
