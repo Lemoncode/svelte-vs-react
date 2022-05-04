@@ -5,7 +5,7 @@
   import { HandlingCSS } from "./02-handling-css";
   import ReactiveCode from "./03-reactive-code/reactive-code.svelte";
   import LifeCycle from "./04-life-cycle/life-cycle.svelte";
-  import AsyncCallback from "./05-async-callback/async-callback.svelte";
+  import AsyncCallback from "./05-async-closure/async-callback.svelte";
   import ConditionalRendering from "./06-conditional-rendering/conditional-rendering.svelte";
   import CommonData from "./07-common-data/common-data.svelte";
   import Context from "./08-context/demo.svelte";
