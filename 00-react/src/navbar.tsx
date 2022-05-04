@@ -26,13 +26,10 @@ export const NavBar = () => {
         06 Conditional Rendering
       </Link>
       <Link className="link" to="/07-common-data">
-        07 Common Data
-      </Link>
-      <Link className="link" to="/08-context">
-        08 Context
+        07/08 Common Data + Context
       </Link>
       <Link className="link" to="/09-data-load">
-        09 Data Load
+        08 Data Load
       </Link>
     </nav>
   );

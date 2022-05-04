@@ -8,7 +8,6 @@ import { LifeCycle } from "./04-life-cycle";
 import { AsyncCallback } from "./05-async-callback";
 import { ConditionalRendering } from "./06-conditional-rendering";
 import { CommonData } from "./07-common-data";
-import { Context } from "./08-context";
 import { DataLoad } from "./09-data-load";
 import { NavBar } from "./navbar";
 
@@ -29,8 +28,7 @@ export const App = () => {
             element={<ConditionalRendering />}
           />
           <Route path="/07-common-data" element={<CommonData />} />
-          <Route path="/08-context" element={<Context />} />
-          <Route path="/09-data-load" element={<DataLoad />} />
+          <Route path="/08-data-load" element={<DataLoad />} />
         </Routes>
       </Router>
     </>
