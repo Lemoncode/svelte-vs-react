@@ -8,7 +8,7 @@ import { LifeCycle } from "./04-life-cycle";
 import { AsyncCallback } from "./05-async-callback";
 import { ConditionalRendering } from "./06-conditional-rendering";
 import { CommonData } from "./07-common-data";
-import { DataLoad } from "./09-data-load";
+import { DataLoad } from "./08-data-load";
 import { NavBar } from "./navbar";
 
 export const App = () => {

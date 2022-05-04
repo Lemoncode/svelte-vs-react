@@ -8,3 +8,5 @@
 
 <h2>Enter your name:</h2>
 <input type="text" value={$user} on:input={(e) => user.set(e.target.value)} />
+
+
