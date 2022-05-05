@@ -4,7 +4,7 @@
   import Lastname from './components/lastname.svelte';
 </script>
 
-<h1>Common data demo</h1>
+<h1>Common data demo (Svelte Stores)</h1>
 
 <h2>Fullname: {$FullnameStore.name} {$FullnameStore.lastname}</h2>
 

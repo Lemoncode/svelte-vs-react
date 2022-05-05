@@ -5,7 +5,7 @@
 import Another from "./components/another.svelte";
 </script>
 
-<h1>Place holder context demo ***</h1>
+<h1>Svelte Context Demo</h1>
 
 <UserContext>
   <Login />

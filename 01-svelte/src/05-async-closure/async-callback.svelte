@@ -15,6 +15,6 @@
   }); 
 </script>
 
-<h1>Place holder async callback demo</h1>
+<h1>Async callback demo</h1>
 <h3>{message}</h3>
 <h4>{seconds}</h4>

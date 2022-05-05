@@ -4,5 +4,7 @@
 
 </script>
 
+<h1>Handling CSS demo</h1>
+
 <ComponentA/>
 <ComponentB/>
