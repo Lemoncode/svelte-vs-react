@@ -1,8 +1,8 @@
 <script lang="ts">
   // Debounce example
   // https://svelte.dev/repl/818b4b38293a4a67901473d6d4f60230?version=3.32.3
-  import { getMovies } from "./api";
-  import { Movie } from "./model";
+  import { getMovies } from "./api/api";
+  import { Movie } from "./api/model";
   let search = "";
   let movies: Movie[] = [];
 

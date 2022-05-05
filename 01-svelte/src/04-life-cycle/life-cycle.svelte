@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { getBitcoinCurrentValue } from "./bitcoin-api";
-  import { getTemperatureCurrentValue } from "./weather-api";
+  import { getBitcoinCurrentValue } from "./api/bitcoin-api";
+  import { getTemperatureCurrentValue } from "./api/weather-api";
   import { onMount } from "svelte";
 
   let bitcoinCurrentValue = 0;

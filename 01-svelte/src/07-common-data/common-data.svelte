@@ -1,7 +1,7 @@
 <script lang="ts">
-  import {FullnameStore} from './fullname-store';
-  import Name from './name.svelte';
-  import Lastname from './lastname.svelte';
+  import {FullnameStore} from './store/fullname-store';
+  import Name from './components/name.svelte';
+  import Lastname from './components/lastname.svelte';
 </script>
 
 <h1>Common data demo</h1>

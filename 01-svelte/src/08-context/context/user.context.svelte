@@ -1,6 +1,6 @@
 <script lang="ts">
   import { setContext } from "svelte";
-  import { createUserStore } from "./user.store";
+  import { createUserStore } from "../store/user.store";
 
   // create the store 
   const userStore = createUserStore();

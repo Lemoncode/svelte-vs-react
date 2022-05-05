@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {FullnameStore} from './fullname-store';
+  import {FullnameStore} from '../store/fullname-store';
 </script>
 
 <input type="text" placeholder="enter lastname" bind:value={$FullnameStore.lastname}/>

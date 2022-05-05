@@ -1,8 +1,8 @@
 <script lang="ts">
-  import UserContext from "./user.context.svelte";
-  import Login from "./login.svelte";
-  import ShowUser from "./showuser.svelte";
-import Another from "./another.svelte";
+  import UserContext from "./context/user.context.svelte";
+  import Login from "./components/login.svelte";
+  import ShowUser from "./components/showuser.svelte";
+import Another from "./components/another.svelte";
 </script>
 
 <h1>Place holder context demo ***</h1>
