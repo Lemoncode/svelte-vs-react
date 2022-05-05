@@ -1,6 +1,6 @@
 import React from "react";
-import { getMovies } from "./api";
-import { Movie } from "./model";
+import { getMovies } from "./api/api";
+import { Movie } from "./api/model";
 
 export const ReactiveCode = () => {
   const [search, setSearch] = React.useState("");

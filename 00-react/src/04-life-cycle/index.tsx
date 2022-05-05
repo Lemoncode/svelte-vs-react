@@ -1,6 +1,6 @@
 import React from "react";
-import { getBitcoinCurrentValue } from "./bitcoin-api";
-import { getTemperatureCurrentValue } from "./weather-api";
+import { getBitcoinCurrentValue } from "./api/bitcoin-api";
+import { getTemperatureCurrentValue } from "./api/weather-api";
 
 export const LifeCycle = () => {
   const [bitcoinCurrentValue, setBitcoinCurrentValue] = React.useState(0);

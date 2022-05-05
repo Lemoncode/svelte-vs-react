@@ -1,7 +1,7 @@
 import React from "react";
-import { Login } from "./login";
-import { ShowUser } from "./showuser";
-import { MyContextProvider } from "./user.context";
+import { Login } from "./components/login";
+import { ShowUser } from "./components/showuser";
+import { MyContextProvider } from "./context/user.context";
 
 export const CommonData = () => {
   return (
