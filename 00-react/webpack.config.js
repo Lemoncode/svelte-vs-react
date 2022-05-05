@@ -12,7 +12,6 @@ module.exports = {
       "regenerator-runtime/runtime",
       "./index.tsx",
       "./styles.css",
-      "./navbar.styles.css",
     ],
   },
   devtool: "eval-source-map",
