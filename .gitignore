@@ -1,6 +1,5 @@
 # Common aux folders
 .awcache/
-.vscode/
 .idea/
 .cache/
 .sonarlint/
