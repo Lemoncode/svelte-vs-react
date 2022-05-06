@@ -21,7 +21,7 @@ export const NavBar = () => {
         04 Life Cycle
       </Link>
       <Link className={classes.link} to="/05-async-callback">
-        05 Async Callback
+        05 Async Closure
       </Link>
       <Link className={classes.link} to="/06-conditional-rendering">
         06 Conditional Rendering
@@ -31,6 +31,9 @@ export const NavBar = () => {
       </Link>
       <Link className={classes.link} to="/08-data-load">
         08 Data Load
+      </Link>
+      <Link className={classes.link} to="/09-web-components">
+        09 Web Components
       </Link>
     </nav>
   );

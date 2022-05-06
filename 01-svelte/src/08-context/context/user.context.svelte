@@ -6,7 +6,7 @@
   const userStore = createUserStore();
 
   // setContext has a key / value
-  // whatchout we should avoid using magic strings
+  // whatcout we should avoid using magic strings
   setContext("user-info", userStore);
 </script>
 

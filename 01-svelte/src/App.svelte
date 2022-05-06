@@ -23,7 +23,7 @@
       <Link to="/handlingCss"><div class="link">02 HandlingCSS</div></Link>
       <Link to="/reactiveCode"><div class="link">03 Reactive Code</div></Link>
       <Link to="/lifeCycle"><div class="link">04 Life Cycle</div></Link>
-      <Link to="/asynccallback"><div class="link">05 Async Callback</div></Link>
+      <Link to="/asynccallback"><div class="link">05 Async Closure</div></Link>
       <Link to="/conditionalrendering"
         ><div class="link">06 Conditional Rendering</div></Link
       >

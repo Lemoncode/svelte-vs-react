@@ -9,6 +9,7 @@ import { AsyncCallback } from "./05-async-closure";
 import { ConditionalRendering } from "./06-conditional-rendering";
 import { CommonData } from "./07-common-data";
 import { DataLoad } from "./08-data-load";
+import { WebComponents } from "./09-web-components";
 import { NavBar } from "./navbar";
 
 export const App = () => {
@@ -17,7 +18,7 @@ export const App = () => {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<HelloWorld />} />
+          <Route path="/" element={<HelloWorld name="World" />} />
           <Route path="/01-dom-update" element={<DomUpdate />} />
           <Route path="/02-handling-css" element={<HandlingCSS />} />
           <Route path="/03-reactive-code" element={<ReactiveCode />} />
@@ -29,6 +30,7 @@ export const App = () => {
           />
           <Route path="/07-common-data" element={<CommonData />} />
           <Route path="/08-data-load" element={<DataLoad />} />
+          <Route path="/09-web-components" element={<WebComponents />} />
         </Routes>
       </Router>
     </>

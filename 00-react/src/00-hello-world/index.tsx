@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const HelloWorld = () => {
-  return (
-    <h1>00 Hello World</h1>
-  )
+interface Props {
+  name: string;
 }
+
+export const HelloWorld = (props: Props) => {
+  return <h1>00 Hello {props.name}</h1>;
+};
